@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+build/
+.env
+.env.*
+.vscode/
+coverage/
+.pnpm-debug.log
+dist/
+**/node_modules
+.secret-ssh-key
