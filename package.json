@@ -1,0 +1,26 @@
+{
+  "name": "ai-site-builder",
+  "version": "0.1.0",
+  "description": "Scaffold for AI-driven static site builder: crawls pages, optimizes images, generates SEO-friendly static sites and deploys to self-hosted servers.",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/cli.js",
+    "generate": "node ./src/cli.js",
+    "deploy": "node ./src/publisher/ssh-deploy.js",
+    "test": "vitest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "sharp": "^0.32.0",
+    "yargs": "^17.7.2",
+    "node-fetch": "^3.3.1",
+    "simple-git": "^3.19.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "pnpm": "^8.0.0"
+  }
+}
